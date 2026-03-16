@@ -2,6 +2,13 @@
 <html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MRXD43V');</script>
+  <!-- End Google Tag Manager -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Parenting in the Digital Era by Aswathi Sreekanth</title>
   <meta name="description" content="Raising Emotionally Intelligent, Resilient Generation Alpha Children — This course combines insights from neuroscience, Montessori philosophy, positive psychology, and positive discipline to give parents simple strategies they can apply every day." />
@@ -87,31 +94,44 @@
       border-radius: 50%; z-index: 0; pointer-events: none;
     }
 
-    /* Hide nav links on mobile */
-    @media (max-width: 768px) {
-      .nav-links-desktop { display: none; }
+    /* Sticky mobile CTA */
+    .mobile-sticky-cta {
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    /* Prevent widow/orphan text in headings and subtitles */
+    h1, h2, h3, h4 {
+      text-wrap: balance;
+    }
+    /* Prevent orphan last lines in subtitle paragraphs */
+    .text-center p, .text-center .section-subtitle {
+      text-wrap: pretty;
     }
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRXD43V"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- ===== 1. STICKY NAVIGATION ===== -->
   <header id="nav" class="sticky top-0 z-50 bg-white/95 border-b border-gray-200 shadow-sm transition-all duration-300">
-    <nav class="max-w-[1200px] mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+    <nav class="max-w-[1200px] mx-auto px-4 lg:px-8 flex items-center justify-between h-16 lg:h-20">
       <a href="#">
-        <img src="assets/assets/entri-assets/entri-logo.svg" alt="Entri Logo" class="h-11" />
+        <img src="assets/assets/entri-assets/entri-logo.svg" alt="Entri Logo" class="h-9 lg:h-11" />
       </a>
-      <div class="nav-links-desktop flex items-center gap-8">
+      <div class="nav-links-desktop hidden lg:flex items-center gap-8">
         <div class="relative group">
           <button class="flex items-center gap-1 text-base text-[#616161] hover:text-dark transition-colors tracking-[0.25px]">
             Courses
             <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-lg border border-gray-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-            <a href="https://entri.app/" class="block px-4 py-2.5 text-sm text-[#616161] hover:bg-primary-light hover:text-primary transition-colors">Parenting Course</a>
+            <a href="https://entri.app/user/plans/O7ne/purchase/" class="block px-4 py-2.5 text-sm text-[#616161] hover:bg-primary-light hover:text-primary transition-colors">Parenting Course</a>
           </div>
         </div>
-        <a href="https://entri.app/" class="inline-flex items-center px-4 py-2 bg-cta text-white text-base font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">
+        <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center px-4 py-2 bg-cta text-white text-base font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">
           Buy Now
         </a>
       </div>
@@ -121,19 +141,19 @@
   <main>
 
     <!-- ===== 2. HERO SECTION ===== -->
-    <section class="relative bg-white overflow-hidden lg:min-h-[808px]">
+    <section class="relative bg-white overflow-hidden lg:min-h-[700px] xl:min-h-[808px]">
       <!-- Desktop: Blue shape + hero photo — pinned to viewport right edge -->
-      <div class="absolute right-0 hidden lg:block overflow-hidden" style="top:80px;width:50vw;height:728px;">
-        <!-- Blue chevron — positioned relative to the right edge -->
-        <svg class="absolute" viewBox="0 0 681.515 1210.65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:500px;height:888px;bottom:-180px;right:-60px;transform:rotate(-109.06deg) scaleY(-1);">
+      <div class="absolute right-0 hidden lg:block" style="top:80px;width:50vw;height:calc(100% - 80px);">
+        <!-- Blue chevron — scales with container -->
+        <svg class="absolute" viewBox="0 0 681.515 1210.65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:clamp(340px, 35vw, 500px);height:auto;bottom:clamp(-220px, -12vw, -100px);right:clamp(-80px, -4vw, -30px);transform:rotate(-109.06deg) scaleY(-1);">
           <path d="M662.534 560.477L110.658 18.782C69.7902 -21.3322 0 7.05629 0 63.8332V1146.92C0 1203.54 69.7902 1231.93 110.658 1191.97L662.534 650.58C687.841 625.74 687.841 585.472 662.534 560.632V560.477Z" fill="#0089FF"/>
         </svg>
-        <!-- Hero photo — right-aligned, overflows bottom naturally -->
+        <!-- Hero photo — right-aligned, fills container height -->
         <img src="assets/assets/Hero/hero-new.png" alt="Mother holding her child who is playing with a toy airplane" class="absolute right-0 top-0 h-full w-auto max-w-none object-cover object-top" />
       </div>
 
       <!-- Desktop content -->
-      <div class="hidden lg:block relative z-10 max-w-[1440px] mx-auto" style="padding:152px 120px 80px;">
+      <div class="hidden lg:block relative z-10 max-w-[1440px] mx-auto" style="padding:clamp(100px, 10vw, 152px) clamp(48px, 8vw, 120px) 80px;">
         <div style="max-width:608px;">
           <h1 class="font-serif font-semibold text-[#212121]" style="font-size:60px;line-height:1.2;letter-spacing:-0.5px;">
             Raise Emotionally Strong, Resilient Children <span class="text-[#0061B5]">in the<br>Digital Age</span>
@@ -150,7 +170,7 @@
               <p class="text-[#616161]" style="font-size:16px;line-height:1.2;letter-spacing:0.25px;margin-top:8px;">Certified Life Coach &amp; Parent Educator</p>
             </div>
           </div>
-          <a href="https://entri.app/" class="inline-flex items-center justify-center bg-cta text-white font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-xl transition-all duration-200" style="width:328px;height:48px;font-size:14px;letter-spacing:0.5px;margin-top:32px;">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center justify-center bg-cta text-white font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-xl transition-all duration-200" style="width:328px;height:48px;font-size:14px;letter-spacing:0.5px;margin-top:32px;">
             Buy Now
           </a>
         </div>
@@ -158,30 +178,27 @@
 
       <!-- Mobile layout -->
       <div class="lg:hidden">
-        <div class="px-6 pt-[72px] pb-8">
-          <div class="flex flex-col gap-6 max-w-[608px]">
-            <h1 class="font-serif text-4xl font-semibold text-[#212121] leading-[1.2] tracking-[-0.5px]">
+        <div class="px-4 pt-8 pb-6">
+          <div class="flex flex-col gap-5">
+            <h1 class="font-serif text-[28px] font-semibold text-[#212121] leading-[1.2] tracking-[-0.5px]">
               Raise Emotionally Strong, Resilient Children <span class="text-[#0061B5]">in the Digital Age</span>
             </h1>
-            <p class="text-lg text-[#616161] leading-[1.5]">
+            <p class="text-base text-[#616161] leading-[1.6]">
               A practical parenting course that helps you raise confident, emotionally intelligent Generation Alpha children growing up in a world of screens, AI, and constant change.
             </p>
-            <div class="flex items-center gap-4">
-              <div class="w-16 h-16 rounded-full bg-[#e6f3ff] overflow-hidden flex-shrink-0">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full bg-[#e6f3ff] overflow-hidden flex-shrink-0">
                 <img src="assets/assets/Instructor/hero-instructor-profile.png" alt="Aswathi Sreekanth" class="w-full h-full object-cover" />
               </div>
               <div>
-                <p class="text-base font-semibold text-black leading-[1.25]">Aswathi Sreekanth</p>
-                <p class="text-sm text-[#616161] leading-[1.2] tracking-[0.25px] mt-1">Certified Life Coach &amp; Parent Educator</p>
+                <p class="text-sm font-semibold text-black leading-[1.25]">Aswathi Sreekanth</p>
+                <p class="text-xs text-[#616161] leading-[1.2] tracking-[0.25px] mt-0.5">Certified Life Coach &amp; Parent Educator</p>
               </div>
             </div>
-            <a href="https://entri.app/" class="inline-flex items-center justify-center w-full max-w-[328px] h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark transition-all duration-200 tracking-[0.5px]">
-              Buy Now
-            </a>
           </div>
         </div>
         <!-- Mobile hero image -->
-        <div class="relative w-full overflow-hidden" style="height:400px;">
+        <div class="relative w-full overflow-hidden" style="height:300px;">
           <svg class="absolute" viewBox="0 0 681.515 1210.65" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:80%;height:auto;right:-10%;bottom:-30%;transform:rotate(-109.06deg) scaleY(-1);">
             <path d="M662.534 560.477L110.658 18.782C69.7902 -21.3322 0 7.05629 0 63.8332V1146.92C0 1203.54 69.7902 1231.93 110.658 1191.97L662.534 650.58C687.841 625.74 687.841 585.472 662.534 560.632V560.477Z" fill="#0089FF"/>
           </svg>
@@ -192,9 +209,9 @@
 
     <!-- ===== 3. REALITY OF PARENTING TODAY ===== -->
     <section class="bg-primary-ultra">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">The Reality of Parenting Today</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Why Modern Parenting Needs a New Approach</h2>
           <p class="mt-4 text-lg text-body leading-relaxed">Parenting today is very different from how previous generations raised children. Children growing up today face challenges no generation has experienced before.</p>
         </div>
         <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-child reveal">
@@ -237,9 +254,9 @@
 
     <!-- ===== 4. THIS COURSE HELPS YOU ===== -->
     <section class="bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">This Course Helps You</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">What You'll Be Able to Do After This Course</h2>
           <p class="mt-4 text-lg text-body">This course gives you practical, science-backed strategies you can use in everyday situations with your child. You will learn how to:</p>
         </div>
         <div class="mt-14 grid md:grid-cols-2 gap-x-10 gap-y-6 max-w-4xl mx-auto reveal-child reveal">
@@ -293,51 +310,54 @@
           </div>
         </div>
         <p class="mt-10 text-center text-body font-medium reveal">These are skills that shape your child's emotional health <em>for life</em>.</p>
+        <div class="mt-8 text-center reveal">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center justify-center w-[328px] max-w-full h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">Buy Now</a>
+        </div>
       </div>
     </section>
 
     <!-- ===== 5. DESIGNED FOR BUSY PARENTS ===== -->
-    <section class="bg-primary-ultra">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <section class="bg-primary-light">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-20">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <h2 class="font-serif text-4xl lg:text-[48px] font-semibold text-dark leading-[1.2]">Designed for Busy Parents</h2>
-          <p class="mt-4 text-lg text-[#616161] leading-[1.5]">This course respects your time. Instead of long lectures, the course is structured into short, easy-to-watch lessons.</p>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Designed for Busy Parents</h2>
+          <p class="mt-4 text-base lg:text-lg text-[#616161] leading-[1.5]">This course respects your time. Instead of long lectures, the course is structured into short, easy-to-watch lessons.</p>
         </div>
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 reveal">
+        <div class="mt-8 lg:mt-10 flex flex-row items-start justify-center gap-4 lg:gap-8 reveal">
           <!-- Under 10 minutes -->
-          <div class="bg-white rounded-2xl p-4 w-[216px] flex flex-col items-center gap-2">
-            <img src="assets/assets/busy-parents/icon-timer.png" alt="Timer icon" class="w-[120px] h-[120px] object-cover" />
-            <div class="text-center">
-              <p class="text-[20px] font-bold text-dark leading-[1.25] tracking-[0.15px]">Under 10 minutes</p>
-              <p class="text-base font-normal text-dark leading-[1.2]">per lesson</p>
+          <div class="flex flex-col items-center gap-4 w-[184px]">
+            <div class="bg-white border-t border-[#f0f0f0] rounded-2xl w-full h-[120px] flex items-center justify-center">
+              <img src="assets/assets/busy-parents/icon-timer.png" alt="Timer icon" class="w-[120px] h-[120px] object-cover" />
             </div>
+            <p class="text-center text-lg font-semibold text-[#212121] leading-[1.25]">Under 10 minutes<br>per lesson</p>
           </div>
           <!-- 3 hours -->
-          <div class="bg-white rounded-2xl p-4 w-[216px] flex flex-col items-center gap-2">
-            <img src="assets/assets/busy-parents/icon-learning.png" alt="Learning icon" class="w-[120px] h-[120px] object-cover" />
-            <div class="text-center">
-              <p class="text-[20px] font-bold text-dark leading-[1.25] tracking-[0.15px]">3 hours</p>
-              <p class="text-base font-normal text-dark leading-[1.2]">Total learning time</p>
+          <div class="flex flex-col items-center gap-4 w-[184px]">
+            <div class="bg-white border-t border-[#f0f0f0] rounded-2xl w-full h-[120px] flex items-center justify-center">
+              <img src="assets/assets/busy-parents/icon-learning.png" alt="Learning icon" class="w-[120px] h-[120px] object-cover" />
             </div>
+            <p class="text-center text-lg font-semibold text-[#212121] leading-[1.25]">3 hours<br>total learning time</p>
           </div>
           <!-- 16 lessons -->
-          <div class="bg-white rounded-2xl p-4 w-[216px] flex flex-col items-center gap-2">
-            <img src="assets/assets/busy-parents/icon-lessons.png" alt="Lessons icon" class="w-[120px] h-[120px] object-cover" />
-            <div class="text-center">
-              <p class="text-[20px] font-bold text-dark leading-[1.25] tracking-[0.15px]">16</p>
-              <p class="text-base font-normal text-dark leading-[1.2]">Practical lessons</p>
+          <div class="flex flex-col items-center gap-4 w-[184px]">
+            <div class="bg-white border-t border-[#f0f0f0] rounded-2xl w-full h-[120px] flex items-center justify-center">
+              <img src="assets/assets/busy-parents/icon-lessons.png" alt="Lessons icon" class="w-[120px] h-[120px] object-cover" />
             </div>
+            <p class="text-center text-lg font-semibold text-[#212121] leading-[1.25]">16<br>practical lessons</p>
           </div>
         </div>
-        <p class="mt-8 text-center text-dark text-base leading-[1.5] max-w-2xl mx-auto reveal">Watch one lesson a day, complete it over a weekend, or learn whenever your schedule allows. Each lesson focuses on one practical concept you can immediately apply at home.</p>
+        <p class="mt-8 text-center text-[#212121] text-base leading-[1.5] max-w-2xl mx-auto reveal">Each lesson focuses on one practical concept you can immediately apply at home.</p>
+        <div class="mt-8 text-center reveal">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center justify-center w-[328px] max-w-full h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">Buy Now</a>
+        </div>
       </div>
     </section>
 
     <!-- ===== 6. WHAT MAKES THIS COURSE DIFFERENT ===== -->
     <section class="bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">What Makes This Course Different</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Built on Science, Not Opinions</h2>
           <p class="mt-4 text-lg text-body">Most parenting advice is based on opinions. This course is built on science and proven frameworks. It combines insights from:</p>
         </div>
         <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-child reveal">
@@ -392,9 +412,9 @@
 
     <!-- ===== 7. WHO THIS COURSE IS FOR ===== -->
     <section class="bg-primary-ultra">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center max-w-3xl mx-auto reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Who This Course Is For</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Who Is This Course For?</h2>
         </div>
         <div class="mt-12 max-w-2xl mx-auto space-y-5 reveal">
           <div class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
@@ -415,15 +435,18 @@
           </div>
         </div>
         <p class="mt-10 text-center text-body max-w-2xl mx-auto reveal">If you want to raise children who are emotionally strong, confident, and prepared for the future, this course is designed for you.</p>
+        <div class="mt-8 text-center reveal">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center justify-center w-[328px] max-w-full h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">Buy Now</a>
+        </div>
       </div>
     </section>
 
     <!-- ===== 8. WHAT YOU WILL LEARN ===== -->
     <section class="bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center max-w-3xl mx-auto reveal">
           <p class="text-primary font-semibold text-sm tracking-widest uppercase mb-3">Learning Outcomes</p>
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">What You Will Learn</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Skills You'll Walk Away With</h2>
           <p class="mt-4 text-lg text-body">After completing this course, you will walk away with practical parenting skills you can apply immediately.</p>
         </div>
         <div class="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 reveal">
@@ -481,11 +504,11 @@
 
     <!-- ===== 9. COURSE CURRICULUM ===== -->
     <section id="curriculum" class="bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <!-- Header -->
         <div class="text-center max-w-3xl mx-auto reveal">
           <p class="text-primary font-semibold text-sm tracking-widest uppercase mb-3">4 Modules &middot; 16 Lessons &middot; ~3 Hours</p>
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Course Curriculum</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Everything Inside the Course</h2>
           <p class="mt-4 text-lg text-body">A step-by-step learning path from understanding your child to building a future-ready family culture.</p>
         </div>
 
@@ -670,6 +693,9 @@
           </div>
 
         </div>
+        <div class="mt-10 text-center reveal">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="inline-flex items-center justify-center w-[328px] max-w-full h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 tracking-[0.5px]">Buy Now</a>
+        </div>
       </div>
     </section>
 
@@ -692,7 +718,7 @@
       </div>
 
       <!-- Right side: Content -->
-      <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-8">
+      <div class="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8">
         <div class="lg:ml-[calc(50%+16px)] pt-20 lg:pt-0 lg:flex lg:flex-col lg:justify-center" style="min-height: 808px;">
           <div class="flex flex-col gap-8 max-w-[584px]">
             <!-- Mobile instructor image -->
@@ -705,17 +731,10 @@
 
             <!-- Heading + Description -->
             <div class="flex flex-col gap-6">
-              <h2 class="font-serif text-4xl lg:text-[48px] font-semibold text-[#212121] leading-[1.2]">Meet Your Instructor</h2>
+              <h2 class="font-serif text-4xl lg:text-[48px] font-semibold text-[#212121] leading-[1.2]">Learn From an Expert Who Gets It</h2>
               <p class="text-lg text-[#616161] leading-[1.5]">
                 Aswathi Sreekanth helps parents build meaningful relationships with their children through practical, research-backed parenting strategies. Her work focuses on helping families raise children who are emotionally intelligent, confident, and resilient. By combining insights from neuroscience, Montessori philosophy, positive psychology, and positive discipline, she teaches parents how to support their child's development in today's rapidly changing world.
               </p>
-            </div>
-
-            <!-- CTA Button -->
-            <div>
-              <a href="https://entri.app/" class="inline-flex items-center justify-center w-[328px] h-[48px] bg-cta text-white text-sm font-bold rounded-full hover:bg-cta-dark hover:scale-[1.02] hover:shadow-xl transition-all duration-200 tracking-[0.5px]">
-                Buy Now
-              </a>
             </div>
           </div>
         </div>
@@ -724,9 +743,9 @@
 
     <!-- ===== 11. FAQ ===== -->
     <section class="bg-primary-ultra">
-      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+      <div class="max-w-3xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
         <div class="text-center reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Frequently Asked Questions</h2>
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Got Questions? We've Got Answers</h2>
         </div>
         <div class="mt-12 space-y-3 reveal">
 
@@ -786,9 +805,9 @@
 
     <!-- ===== 12. FINAL CTA ===== -->
     <section id="enroll">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-        <div class="bg-gradient-to-br from-[#0089FF] to-[#0070D6] rounded-3xl px-8 py-16 sm:px-16 sm:py-20 text-center reveal">
-          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white">Give Your Child the Emotional Skills They Need for the Future</h2>
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-12 lg:py-28">
+        <div class="bg-gradient-to-br from-[#0089FF] to-[#0070D6] rounded-2xl lg:rounded-3xl px-6 py-12 lg:px-16 lg:py-20 text-center reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white">Start Raising a Confident, Resilient Child Today</h2>
           <p class="mt-6 text-lg text-blue-100 max-w-2xl mx-auto">
             Parenting doesn't come with a manual. But the right guidance can make the journey easier and more meaningful. This course will help you become a more confident, mindful parent.
           </p>
@@ -810,7 +829,7 @@
               Lifetime access
             </span>
           </div>
-          <a href="https://entri.app/" class="mt-10 inline-flex items-center px-10 py-4 bg-white text-cta font-bold rounded-full hover:bg-gray-50 hover:scale-[1.02] hover:shadow-xl transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white text-lg">
+          <a href="https://entri.app/user/plans/O7ne/purchase/" class="mt-10 inline-flex items-center px-10 py-4 bg-white text-cta font-bold rounded-full hover:bg-gray-50 hover:scale-[1.02] hover:shadow-xl transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white text-lg">
             Buy Now
           </a>
         </div>
@@ -821,7 +840,7 @@
 
   <!-- ===== 13. FOOTER ===== -->
   <footer class="bg-[#121212] text-[#949494] font-sans">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-[120px] pt-12 lg:pt-16 pb-8">
+    <div class="max-w-[1440px] mx-auto px-4 lg:px-[120px] pt-12 lg:pt-16 pb-20 lg:pb-8">
 
       <!-- Top Section: Info + Google Play -->
       <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between pb-8 border-b border-[#2c2c2c]">
@@ -1035,6 +1054,13 @@
       }, true);
     })();
   </script>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 lg:hidden mobile-sticky-cta bg-white border-t border-gray-200 px-4 py-3">
+    <a href="https://entri.app/user/plans/O7ne/purchase/" class="flex items-center justify-center w-full h-12 bg-cta text-white text-base font-bold rounded-full hover:bg-cta-dark transition-all duration-200 tracking-[0.5px]">
+      Buy Now
+    </a>
+  </div>
 
 </body>
 </html>
