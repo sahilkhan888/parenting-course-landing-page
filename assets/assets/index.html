@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raise Emotionally Strong, Resilient Children — Parenting Course by Aswathi Sreekanth | Entri</title>
+  <meta name="description"
+    content="A practical parenting course that helps you raise confident, emotionally intelligent Generation Alpha children. Short lessons backed by neuroscience, Montessori, and positive psychology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Serif:wght@600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Noto Serif"', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            primary: { DEFAULT: '#0089FF', dark: '#0070D6', light: '#E6F3FF', ultra: '#F0F8FF' },
+            warm: '#FF6B35',
+            success: '#10B981',
+            dark: '#1A1A2E',
+            body: '#4A4A68',
+            muted: '#8A8AA3',
+            page: '#FAFBFF',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: #4A4A68;
+      background: #FAFBFF;
+    }
+
+    .font-serif {
+      font-family: 'Noto Serif', Georgia, serif;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-child>* {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal-child.revealed>*:nth-child(1) {
+      transition-delay: 0.05s;
+    }
+
+    .reveal-child.revealed>*:nth-child(2) {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-child.revealed>*:nth-child(3) {
+      transition-delay: 0.15s;
+    }
+
+    .reveal-child.revealed>*:nth-child(4) {
+      transition-delay: 0.2s;
+    }
+
+    .reveal-child.revealed>*:nth-child(5) {
+      transition-delay: 0.25s;
+    }
+
+    .reveal-child.revealed>*:nth-child(6) {
+      transition-delay: 0.3s;
+    }
+
+    .reveal-child.revealed>*:nth-child(7) {
+      transition-delay: 0.35s;
+    }
+
+    .reveal-child.revealed>*:nth-child(8) {
+      transition-delay: 0.4s;
+    }
+
+    .reveal-child.revealed>* {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Accordion grid-rows trick */
+    .accordion-body {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.35s ease;
+    }
+
+    .accordion-body.open {
+      grid-template-rows: 1fr;
+    }
+
+    .accordion-body>div {
+      overflow: hidden;
+    }
+
+    /* Decorative blob */
+    .hero-blob {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      width: 110%;
+      height: 110%;
+      background: radial-gradient(circle at 60% 40%, #E6F3FF 0%, transparent 70%);
+      border-radius: 50%;
+      z-index: 0;
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== 1. STICKY NAVIGATION ===== -->
+  <header id="nav"
+    class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#">
+        <img src="assets/entri-logo.png" alt="Entri Logo" class="h-8 sm:h-9" />
+      </a>
+      <a href="#enroll"
+        class="inline-flex items-center px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-full hover:bg-primary-dark hover:scale-[1.02] hover:shadow-lg transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+        Enroll Now
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== 2. HERO SECTION ===== -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-primary-ultra to-page">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-stretch">
+          <!-- Left -->
+          <div class="reveal flex flex-col justify-center">
+            <h1 class="font-serif text-4xl lg:text-6xl font-bold text-dark leading-tight">
+              Raise Emotionally Strong, Resilient Children <span class="text-primary">in the Digital Age</span>
+            </h1>
+            <p class="mt-6 text-lg sm:text-xl text-body leading-relaxed max-w-xl">
+              A practical parenting course that helps you raise confident, emotionally intelligent Generation Alpha
+              children growing up in a world of screens, AI, and constant change.
+            </p>
+
+            <!-- Instructor mini-row -->
+            <div class="mt-6 flex items-center gap-3">
+              <img src="assets/assets/Instructor/aswathy.png" alt="Aswathi Sreekanth"
+                class="w-11 h-11 rounded-full object-cover ring-2 ring-primary-light" />
+              <div>
+                <p class="text-sm font-semibold text-dark">Aswathi Sreekanth</p>
+                <p class="text-xs text-muted">Certified Life Coach &amp; Parenting Educator</p>
+              </div>
+            </div>
+
+            <!-- Value points -->
+            <ul class="mt-8 space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-body">Learn practical parenting strategies backed by neuroscience</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-body">Raise emotionally intelligent and resilient children</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-body">Manage screen time without constant conflict</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                <span class="text-body">Build a strong emotional bond with your child</span>
+              </li>
+            </ul>
+
+            <!-- Badges -->
+            <div class="mt-8 flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center px-3 py-1.5 bg-primary-light text-primary text-xs font-medium rounded-full">Self-paced</span>
+              <span
+                class="inline-flex items-center px-3 py-1.5 bg-primary-light text-primary text-xs font-medium rounded-full">16
+                Short Lessons</span>
+              <span
+                class="inline-flex items-center px-3 py-1.5 bg-primary-light text-primary text-xs font-medium rounded-full">~3
+                Hours Total</span>
+              <span
+                class="inline-flex items-center px-3 py-1.5 bg-primary-light text-primary text-xs font-medium rounded-full">Mobile-Friendly</span>
+              <span
+                class="inline-flex items-center px-3 py-1.5 bg-primary-light text-primary text-xs font-medium rounded-full">Certificate</span>
+            </div>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#enroll"
+                class="inline-flex items-center px-8 py-3.5 bg-primary text-white font-semibold rounded-full hover:bg-primary-dark hover:scale-[1.02] hover:shadow-xl transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                Enroll Now
+              </a>
+              <a href="#curriculum"
+                class="inline-flex items-center px-8 py-3.5 border-2 border-primary text-primary font-semibold rounded-full hover:bg-primary-light hover:scale-[1.02] transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                View Curriculum
+              </a>
+            </div>
+          </div>
+
+          <!-- Right — Hero Image -->
+          <div class="mt-12 lg:mt-0 relative reveal lg:self-stretch">
+            <div class="hero-blob"></div>
+            <div class="relative z-10 h-full min-h-[400px] lg:min-h-0">
+              <img src="assets/Hero/image.png"
+                alt="Illustration of a happy family — parents playing with their toddler at home"
+                class="w-full h-full object-cover object-top rounded-2xl shadow-2xl" />
+              <div
+                class="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-primary-ultra to-transparent rounded-b-2xl">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. REALITY OF PARENTING TODAY ===== -->
+    <section class="bg-primary-ultra">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">The Reality of Parenting Today</h2>
+          <p class="mt-4 text-lg text-body leading-relaxed">Parenting today is very different from how previous
+            generations raised children. Children growing up today face challenges no generation has experienced before.
+          </p>
+        </div>
+        <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-child reveal">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1.5">
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <circle cx="12" cy="18" r="1" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-dark text-lg">Screen Overload</h3>
+            <p class="mt-2 text-sm text-body">Constant exposure to screens and digital devices from an increasingly
+              young age.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-dark text-lg">Emotional Overstimulation</h3>
+            <p class="mt-2 text-sm text-body">Emotional overstimulation and shorter attention spans affecting
+              development.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-dark text-lg">AI-Shaped Future</h3>
+            <p class="mt-2 text-sm text-body">A future shaped by artificial intelligence and automation that demands new
+              skills.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+            <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-dark text-lg">Social Pressure</h3>
+            <p class="mt-2 text-sm text-body">Increasing social and emotional pressures at younger ages than ever
+              before.</p>
+          </div>
+        </div>
+        <p class="mt-10 text-center text-body max-w-2xl mx-auto reveal">Many parents feel overwhelmed trying to guide
+          their children through this new world. What parents need today are <strong class="text-dark">new tools for
+            modern parenting</strong>.</p>
+      </div>
+    </section>
+
+    <!-- ===== 4. THIS COURSE HELPS YOU ===== -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">This Course Helps You</h2>
+          <p class="mt-4 text-lg text-body">This course gives you practical, science-backed strategies you can use in
+            everyday situations with your child. You will learn how to:</p>
+        </div>
+        <div class="mt-14 grid md:grid-cols-2 gap-x-10 gap-y-6 max-w-4xl mx-auto reveal-child reveal">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Understand how your toddler's brain develops</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Respond calmly to emotional outbursts</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Build a strong and secure parent-child bond</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Teach emotional intelligence from an early age</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Encourage independence and self-confidence</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Raise resilient children who can adapt to change</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Balance technology with real-world learning</p>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary-light rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+              </svg>
+            </div>
+            <p class="text-body pt-1.5">Create a positive and values-driven family environment</p>
+          </div>
+        </div>
+        <p class="mt-10 text-center text-body font-medium reveal">These are skills that shape your child's emotional
+          health <em>for life</em>.</p>
+      </div>
+    </section>
+
+    <!-- ===== 5. DESIGNED FOR BUSY PARENTS ===== -->
+    <section class="bg-primary-ultra">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Designed for Busy Parents</h2>
+          <p class="mt-4 text-lg text-body">This course respects your time. Instead of long lectures, the course is
+            structured into short, easy-to-watch lessons.</p>
+        </div>
+        <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 reveal">
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-primary">Under 10</p>
+            <p class="mt-2 text-lg text-body">minutes per lesson</p>
+          </div>
+          <div class="hidden sm:block w-px h-20 bg-gray-200"></div>
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-primary">~3 hrs</p>
+            <p class="mt-2 text-lg text-body">total learning time</p>
+          </div>
+          <div class="hidden sm:block w-px h-20 bg-gray-200"></div>
+          <div class="text-center">
+            <p class="text-5xl lg:text-6xl font-bold text-primary">16</p>
+            <p class="mt-2 text-lg text-body">practical lessons</p>
+          </div>
+        </div>
+        <p class="mt-10 text-center text-body max-w-xl mx-auto reveal">Watch one lesson a day, complete it over a
+          weekend, or learn whenever your schedule allows. Each lesson focuses on one practical concept you can
+          immediately apply at home.</p>
+      </div>
+    </section>
+
+    <!-- ===== 6. WHAT MAKES THIS COURSE DIFFERENT ===== -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">What Makes This Course Different</h2>
+          <p class="mt-4 text-lg text-body">Most parenting advice is based on opinions. This course is built on science
+            and proven frameworks. It combines insights from:</p>
+        </div>
+        <div class="mt-14 grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal-child reveal">
+          <!-- Neuroscience -->
+          <div
+            class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-1.5 bg-primary"></div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-dark text-lg">Neuroscience</h3>
+              <p class="mt-2 text-sm text-body">Understanding how a child's brain develops and processes emotions.</p>
+            </div>
+          </div>
+          <!-- Montessori -->
+          <div
+            class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-1.5 bg-primary"></div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-dark text-lg">Montessori Philosophy</h3>
+              <p class="mt-2 text-sm text-body">Encouraging independence, curiosity, and hands-on learning.</p>
+            </div>
+          </div>
+          <!-- Positive Psychology -->
+          <div
+            class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-1.5 bg-primary"></div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-dark text-lg">Positive Psychology</h3>
+              <p class="mt-2 text-sm text-body">Building emotional intelligence, confidence, and empathy.</p>
+            </div>
+          </div>
+          <!-- Positive Discipline -->
+          <div
+            class="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+            <div class="h-1.5 bg-primary"></div>
+            <div class="p-6">
+              <div class="w-12 h-12 bg-primary-light rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                  stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="font-semibold text-dark text-lg">Positive Discipline</h3>
+              <p class="mt-2 text-sm text-body">Teaching responsibility and values without punishment or fear.</p>
+            </div>
+          </div>
+        </div>
+        <p class="mt-10 text-center text-body max-w-2xl mx-auto reveal">This combination provides parents with a
+          balanced, practical approach to raising healthy children.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. WHO THIS COURSE IS FOR ===== -->
+    <section class="bg-primary-ultra">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Who This Course Is For</h2>
+        </div>
+        <div class="mt-12 max-w-2xl mx-auto space-y-5 reveal">
+          <div class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
+            <svg class="w-6 h-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-dark font-medium">First-time parents</span>
+          </div>
+          <div class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
+            <svg class="w-6 h-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-dark font-medium">Parents of toddlers aged 1–5 years</span>
+          </div>
+          <div class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
+            <svg class="w-6 h-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-dark font-medium">Caregivers and grandparents</span>
+          </div>
+          <div class="flex items-center gap-4 bg-white rounded-xl p-5 shadow-sm">
+            <svg class="w-6 h-6 text-success flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              stroke-width="2.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+            <span class="text-dark font-medium">Families raising Generation Alpha children (born after 2010)</span>
+          </div>
+        </div>
+        <p class="mt-10 text-center text-body max-w-2xl mx-auto reveal">If you want to raise children who are
+          emotionally strong, confident, and prepared for the future, this course is designed for you.</p>
+      </div>
+    </section>
+
+    <!-- ===== 8. WHAT YOU WILL LEARN ===== -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">What You Will Learn</h2>
+          <p class="mt-4 text-lg text-body">After completing this course, you will walk away with practical parenting
+            skills you can apply immediately.</p>
+        </div>
+        <div class="mt-14 max-w-3xl mx-auto space-y-5 reveal-child reveal">
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">1</span>
+            <p class="text-body pt-2">Understand the unique needs of Generation Alpha children</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">2</span>
+            <p class="text-body pt-2">Support healthy brain development in early childhood</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">3</span>
+            <p class="text-body pt-2">Teach children to understand and regulate their emotions</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">4</span>
+            <p class="text-body pt-2">Encourage curiosity, independence, and problem solving</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">5</span>
+            <p class="text-body pt-2">Build resilience and adaptability</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">6</span>
+            <p class="text-body pt-2">Guide children in a digital-first world</p>
+          </div>
+          <div class="flex items-start gap-5">
+            <span
+              class="w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm flex-shrink-0">7</span>
+            <p class="text-body pt-2">Create a strong values-based family culture</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. COURSE CURRICULUM ===== -->
+    <section id="curriculum" class="bg-primary-ultra">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center max-w-3xl mx-auto reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Course Curriculum</h2>
+          <p class="mt-4 text-lg text-body">The course includes 4 modules with practical lessons that build step by
+            step.</p>
+        </div>
+        <div class="mt-14 max-w-3xl mx-auto space-y-4 reveal">
+
+          <!-- Module 1 -->
+          <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <button
+              class="curriculum-toggle w-full flex items-center justify-between p-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0">01</span>
+                <div>
+                  <h3 class="font-semibold text-dark">Understanding Generation Alpha &amp; Their Unique Needs</h3>
+                  <p class="text-sm text-muted mt-0.5">4 lessons</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <ul class="px-6 pb-6 space-y-3 border-l-2 border-primary-light ml-11">
+                  <li class="pl-4 text-body text-sm">Who is Generation Alpha</li>
+                  <li class="pl-4 text-body text-sm">Brain Development in Toddlers</li>
+                  <li class="pl-4 text-body text-sm">Building a Strong Parent-Child Bond</li>
+                  <li class="pl-4 text-body text-sm">Balancing Technology and Real-World Experiences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 2 -->
+          <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <button
+              class="curriculum-toggle w-full flex items-center justify-between p-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0">02</span>
+                <div>
+                  <h3 class="font-semibold text-dark">Emotional Intelligence in Early Childhood</h3>
+                  <p class="text-sm text-muted mt-0.5">4 lessons</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <ul class="px-6 pb-6 space-y-3 border-l-2 border-primary-light ml-11">
+                  <li class="pl-4 text-body text-sm">What is Emotional Intelligence</li>
+                  <li class="pl-4 text-body text-sm">Teaching Emotional Regulation</li>
+                  <li class="pl-4 text-body text-sm">Encouraging Independence and Self-Awareness</li>
+                  <li class="pl-4 text-body text-sm">Gratitude and Positive Reinforcement</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 3 -->
+          <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <button
+              class="curriculum-toggle w-full flex items-center justify-between p-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0">03</span>
+                <div>
+                  <h3 class="font-semibold text-dark">Building Resilience and Adaptability</h3>
+                  <p class="text-sm text-muted mt-0.5">4 lessons</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <ul class="px-6 pb-6 space-y-3 border-l-2 border-primary-light ml-11">
+                  <li class="pl-4 text-body text-sm">What is Resilience and Why It Matters</li>
+                  <li class="pl-4 text-body text-sm">Teaching Problem-Solving Skills</li>
+                  <li class="pl-4 text-body text-sm">Helping Children Adapt to Change</li>
+                  <li class="pl-4 text-body text-sm">Encouraging Curiosity and Lifelong Learning</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 4 -->
+          <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+            <button
+              class="curriculum-toggle w-full flex items-center justify-between p-6 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <div class="flex items-center gap-4">
+                <span
+                  class="w-10 h-10 bg-primary text-white rounded-xl flex items-center justify-center font-bold text-sm flex-shrink-0">04</span>
+                <div>
+                  <h3 class="font-semibold text-dark">Value-Driven Parenting and Preparing for the Future</h3>
+                  <p class="text-sm text-muted mt-0.5">4 lessons</p>
+                </div>
+              </div>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <ul class="px-6 pb-6 space-y-3 border-l-2 border-primary-light ml-11">
+                  <li class="pl-4 text-body text-sm">Instilling Core Values in Toddlers</li>
+                  <li class="pl-4 text-body text-sm">Strengths-Based Parenting</li>
+                  <li class="pl-4 text-body text-sm">Preparing Children for an AI-driven Future</li>
+                  <li class="pl-4 text-body text-sm">Creating a Values-Driven Family Culture</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 10. MEET YOUR INSTRUCTOR ===== -->
+    <section class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+          <div class="reveal">
+            <img src="assets/assets/Instructor/aswathy.png"
+              alt="Aswathi Sreekanth — Certified Life Coach and Parenting Educator"
+              class="w-full max-w-md mx-auto rounded-2xl shadow-xl object-cover aspect-[3/4]" loading="lazy" />
+          </div>
+          <div class="mt-10 lg:mt-0 reveal">
+            <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Meet Your Instructor</h2>
+            <p class="mt-6 text-lg text-body leading-relaxed">
+              Aswathi Sreekanth helps parents build meaningful relationships with their children through practical,
+              research-backed parenting strategies. Her work focuses on helping families raise children who are
+              emotionally intelligent, confident, and resilient.
+            </p>
+            <p class="mt-4 text-body leading-relaxed">
+              By combining insights from neuroscience, Montessori philosophy, positive psychology, and positive
+              discipline, she teaches parents how to support their child's development in today's rapidly changing
+              world.
+            </p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span
+                class="inline-flex items-center px-4 py-2 bg-primary-light text-primary text-sm font-medium rounded-full">Certified
+                Life Coach</span>
+              <span
+                class="inline-flex items-center px-4 py-2 bg-primary-light text-primary text-sm font-medium rounded-full">Parenting
+                Educator</span>
+              <span
+                class="inline-flex items-center px-4 py-2 bg-primary-light text-primary text-sm font-medium rounded-full">Neuroscience-Based
+                Approach</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 11. FAQ ===== -->
+    <section class="bg-primary-ultra">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="text-center reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-dark">Frequently Asked Questions</h2>
+        </div>
+        <div class="mt-12 space-y-3 reveal">
+
+          <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <span class="font-semibold text-dark pr-4">Who is this course designed for?</span>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="px-5 pb-5 text-body text-sm">The course is designed for first-time parents, parents of
+                  toddlers aged 1–5 years, caregivers, grandparents, and anyone raising Generation Alpha children.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <span class="font-semibold text-dark pr-4">How long does the course take?</span>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="px-5 pb-5 text-body text-sm">The course takes approximately 2.5–3 hours in total and can be
+                  completed at your own pace.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <span class="font-semibold text-dark pr-4">Do I need any prior knowledge?</span>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="px-5 pb-5 text-body text-sm">No prior knowledge is required. All concepts are explained in
+                  simple and practical language.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <span class="font-semibold text-dark pr-4">Will I receive a certificate?</span>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="px-5 pb-5 text-body text-sm">Yes. After completing the course, you will receive a certificate
+                  of completion.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-sm overflow-hidden">
+            <button
+              class="faq-toggle w-full flex items-center justify-between p-5 text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+              aria-expanded="false">
+              <span class="font-semibold text-dark pr-4">Can I access the course on mobile?</span>
+              <svg class="w-5 h-5 text-muted transition-transform duration-300 chevron flex-shrink-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="accordion-body">
+              <div>
+                <p class="px-5 pb-5 text-body text-sm">Yes. The course is fully mobile-friendly and can be accessed
+                  anytime on phone, tablet, or desktop.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 12. FINAL CTA ===== -->
+    <section id="enroll">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div
+          class="bg-gradient-to-br from-[#0089FF] to-[#0070D6] rounded-3xl px-8 py-16 sm:px-16 sm:py-20 text-center reveal">
+          <h2 class="font-serif text-3xl lg:text-4xl font-bold text-white">Give Your Child the Emotional Skills They
+            Need for the Future</h2>
+          <p class="mt-6 text-lg text-blue-100 max-w-2xl mx-auto">
+            Parenting doesn't come with a manual. But the right guidance can make the journey easier and more
+            meaningful. This course will help you become a more confident, mindful parent.
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-6 text-sm text-blue-100">
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Self-paced learning
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Practical strategies
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Short video lessons
+            </span>
+            <span class="flex items-center gap-2">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+              </svg>
+              Lifetime access
+            </span>
+          </div>
+          <a href="#enroll"
+            class="mt-10 inline-flex items-center px-10 py-4 bg-white text-primary font-bold rounded-full hover:bg-gray-50 hover:scale-[1.02] hover:shadow-xl transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white text-lg">
+            Enroll in the Course
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 13. FOOTER ===== -->
+  <footer class="bg-[#1A1A2E]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
+      <img src="assets/entri-logo.png" alt="Entri Logo" class="h-7 mx-auto brightness-0 invert opacity-70" />
+      <p class="mt-4 text-sm text-gray-400">&copy; 2026 Entri. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== INLINE JS ===== -->
+  <script>
+    // Scroll reveal with Intersection Observer
+    const revealElements = document.querySelectorAll('.reveal, .reveal-child');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    // FAQ accordion — one open at a time
+    document.querySelectorAll('.faq-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+
+        // Close all FAQ
+        document.querySelectorAll('.faq-toggle').forEach(b => {
+          b.nextElementSibling.classList.remove('open');
+          b.setAttribute('aria-expanded', 'false');
+          b.querySelector('.chevron').style.transform = '';
+        });
+
+        // Toggle current
+        if (!isOpen) {
+          body.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.querySelector('.chevron').style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+
+    // Curriculum accordion — independent toggles
+    document.querySelectorAll('.curriculum-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const isOpen = body.classList.contains('open');
+        body.classList.toggle('open');
+        btn.setAttribute('aria-expanded', String(!isOpen));
+        btn.querySelector('.chevron').style.transform = isOpen ? '' : 'rotate(180deg)';
+      });
+    });
+
+    // Nav solid on scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        nav.classList.add('shadow-sm');
+        nav.classList.remove('bg-white/80');
+        nav.classList.add('bg-white');
+      } else {
+        nav.classList.remove('shadow-sm');
+        nav.classList.remove('bg-white');
+        nav.classList.add('bg-white/80');
+      }
+    }, { passive: true });
+  </script>
+
+</body>
+
+</html>
